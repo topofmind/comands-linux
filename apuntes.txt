@@ -1,0 +1,136 @@
+Apuntes prueba nivel2:
+
+- SSH
+
+    -datos para conectarme al servidor remoto:
+
+
+        Your public IP: 3.91.201.187
+        Your port: 22
+        Your login: root
+        Your password: 289Ae!60FB8198d1c
+
+
+    -Para inicar sesion en el servidor usando la terminal:
+
+        ssh root@ip(numeroip) -> ssh root@18.208.211.151.
+
+        huella digital SHA256:u8KaEWlL2iAsTrh+LMbJ2zjYtwv2x7oYB03nI5oEM74.
+
+        codigo de login: 520c43e3
+
+
+-UNAME
+
+    Comando para saber la version y otros detalles de la version de la maquina y el sistema operativo.ej uname
+
+-MAN 
+    nos permite ver todas las opciones que ofrece un comando de linux asi podemos aprender todo lo q ofrece. ej man ls
+
+-PWD:
+    nos permite saber en que carpeta (con la ruta) nos encontramos ubicados dentro del disco duro. ej pwd
+
+-CD:
+    nos permite navegar entre directorios EJ cd directorio
+
+-LESS :
+    nos permite ver archivos de texto ej less filename.
+
+-TOUCH:
+    nos permite crear archivos ej touch hellow_world.txt
+-CP:
+    nos permite copiar archivos y directorios ej cp filename temp(si esta un directorio arriba ../temp, si esta en la misma ruta ./temp)
+-MV:
+    nos permite mover los archivos a otros dirctorios y renombrarlos.
+    ej: - mv hello_holberto hello_holberton (renomrar archivo)
+        - mv hello_world ../temp (mover el archivo a otro directorio)
+
+-RM: 
+    eliminar archivos rm nombrefile
+
+-mkdir:
+    crea un directorio mkdir nombre
+
+-rmdir:
+    elimina un directorio rmdir nombre
+
+-EMACS:
+    es un editor de texto extensible y personalizable. Es un editor de texto que puede usar para editar sus archivos de texto, HTML, CSS y JavaScript.
+
+    Instalacion: apt-get install emacs
+
+    Crear un archivo llamado en emacs: emacs prueba_file
+
+    control + x + c guardar el archivo
+
+-DF:
+    El comando df muestra el tamaño, el espacio utilizado y el espacio disponible en los sistemas de archivos montados de su computadora.
+    df -h -x squashfs
+
+echo:
+    El comando echo imprime (hace eco) una cadena de texto en la ventana del terminal.
+    Tambien puedes imprimir la variables de entorno su valor:
+
+    echo A string of text
+    echo $USER
+
+- FIND:
+
+Use el comando de búsqueda para localizar archivos que sabe que existen si no puede recordar dónde los colocó. Debe indicar dónde buscar y dónde buscar.
+
+-PASSWORD:
+    El comando passwd le permite cambiar la contraseña de un usuario. Simplemente escriba passwd para cambiar su propia contraseña.
+
+    sudo passwd mary
+
+-PING:
+    El comando ping le permite verificar que tiene conectividad de red con otro dispositivo de red. Se usa comúnmente para ayudar a solucionar problemas de red. Para usar ping, proporcione la dirección IP o el nombre de la máquina del otro dispositivo.
+
+    ping 192.168.4.18
+
+-PS:
+    El comando ps enumera los procesos en ejecución. El uso de ps sin ninguna opción hace que enumere los procesos que se ejecutan en el shell actual.
+
+    ps
+
+    ssh mary@192.168.4.23
+-TAR:
+    comprimir archivos,
+    tar -cvf nameFile.tar
+
+-APACHE:
+    es nuestro servidor web, el cual nos permitira poder almacenar nuestros sitios web y q sean visibles para el mundo usando una direcion ip
+
+    Intsalacion:
+        apt-get install apache2
+
+        Apache mantiene sus archivos de configuración principales dentro del directorio / etc / apache2.
+
+        Al igual que cualquier otro sitio web administrado por Apache, el sitio web predeterminado que ve en su navegador tiene su propio archivo de configuración: /etc/apache2/sites-available/000-default.conf. Dentro de este archivo de configuración puede encontrar una opción llamada DocumentRoot, que especifica qué directorio contiene los archivos del sitio web predeterminado.
+
+        ubicacion de nuestro archivo index: located at /var/www/html/index.html
+
+requisitos de pagina web
+    debe contener minimo 4 parrafos, los primeros tres h (h1, h2, h3)
+    crear un archivo llamado tweets.html e incrustar un twite en esta pagina
+    hacer un menu de navegacion
+    el aside solo debe contener lo sieguiente marcador de posición para agregar hilo de comentarios más tarde
+
+     http://3.91.201.187.
+
+    
+    En el directorio / var / www / html, cambie index.html, para que contenga:
+
+    al menos 4 párrafos;
+    encabezados (títulos) de nivel 1, 2 y 3, que están representados por las etiquetas <h1>, <h2> y <h3>;
+    una imagen de su elección en la que se puede hacer clic (puede usar la imagen https://www.holbertonschool.com/holberton_logo.png u otra que encuentre en Internet utilizando su URL completa); y puede vincular a cualquier URL en línea que desee.
+
+Tenga en cuenta que si guarda el archivo index.html y actualiza la URL http://54.242.165.207 en su navegador, la página web reflejará instantáneamente sus cambios.
+
+https://www.holbertonschool.com/holberton_logo.png 
+
+debe tener al menos un tweet en la pagina de tiwets.html
+
+enbeber los twits en html: https://help.twitter.com/en/using-twitter/how-to-embed-a-tweet
+
+crear otras dos secciones al sitio web como minimo.
